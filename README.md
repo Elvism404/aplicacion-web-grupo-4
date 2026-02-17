@@ -33,11 +33,11 @@ pip install flask folium
    ```
 
 2. Asegúrate de tener los archivos:
-  - app.py
-  - data/riesgo_parroquias_final.csv
-  - parroquias_normalizadas.geojson
-  - requirements.txt
-  - README.md
+     - app.py
+     - data/riesgo_parroquias_final.csv
+     - parroquias_normalizadas.geojson
+     - requirements.txt
+     - README.md
   
 3. Instala las dependencias:
 pip install -r requirements.txt
