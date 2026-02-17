@@ -105,14 +105,21 @@ Mapa interactivo (Flask + Folium)
         - Leyenda y título con fondo azul
 ```
 
-## Estructura del proyecto
+## Estructura del repositorio: aplicacion-web-grupo-4
 ```
+aplicacion-web-grupo-4/
+│
 ├── app.py                          # Aplicación principal Flask
+│
 ├── data/
 │   └── riesgo_parroquias_final.csv # Datos de riesgo por parroquia
+│
 ├── parroquias_normalizadas.geojson # Datos geográficos de parroquias
+│
 ├── requirements.txt                # Dependencias del proyecto
+│
 └── README.md                       # Documentación del proyecto
+
 ```
 
 ## Notas
