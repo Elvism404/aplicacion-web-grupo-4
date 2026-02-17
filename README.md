@@ -60,7 +60,7 @@ Contiene los polígonos de las parroquias con atributos básicos como nombre de 
 - Predicciones (CSV):
 Incluye las categorías de riesgo de inundación y la probabilidad asociada a cada parroquia.
 
-a) Proceso de emparejamiento
+1. Proceso de emparejamiento
 - Se normaliza el nombre de la parroquia en ambos archivos (mayúsculas, sin espacios extra).
 - Por cada feature del GeoJSON, se busca la parroquia correspondiente en el CSV.
 - Se añaden al GeoJSON las propiedades:
@@ -69,7 +69,7 @@ a) Proceso de emparejamiento
     - RIESGO (categoría: Alto, Medio, Bajo, Sin datos)
     - PROBABILIDAD (valor numérico de la predicción)
 
-b) Resultado
+2. Resultado
 - El mapa muestra cada parroquia con un color según su nivel de riesgo.
 - Al pasar el cursor, se despliega un tooltip con parroquia, cantón y provincia.
 - Al hacer clic, aparece un popup con la predicción de riesgo y la probabilidad.
