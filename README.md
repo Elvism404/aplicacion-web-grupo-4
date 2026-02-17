@@ -25,9 +25,12 @@ pip install flask folium
 ```
 
 ## Ejecución local
+
 1. Clona este repositorio:
-git clone https://github.com/tuusuario/nombre-del-repo.git
-cd nombre-del-repo
+   ```bash
+   git clone https://github.com/Elvism404/aplicacion-web-grupo-4.git
+   cd aplicacion-web-grupo-4
+   ```
 
 2. Asegúrate de tener los archivos:
   - app.py
