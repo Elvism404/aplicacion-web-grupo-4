@@ -40,7 +40,9 @@ pip install flask folium
      - README.md
   
 3. Instala las dependencias:
+```
 pip install -r requirements.txt
+```
 
 4. Ejecuta la aplicación:
 python app.py
