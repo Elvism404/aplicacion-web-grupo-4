@@ -33,11 +33,16 @@ cd nombre-del-repo
 - app.py
 - data/riesgo_parroquias_final.csv
 - parroquias_normalizadas.geojson
+- requirements.txt
+- README.md
+  
+3. Instala las dependencias:
+pip install -r requirements.txt
 
-3. Ejecuta la aplicación:
+4. Ejecuta la aplicación:
 python app.py
 
-4. Abre en tu navegador:
+5. Abre en tu navegador:
 http://127.0.0.1:5000
 
 
@@ -55,7 +60,7 @@ Contiene los polígonos de las parroquias con atributos básicos como nombre de 
 - Predicciones (CSV):
 Incluye las categorías de riesgo de inundación y la probabilidad asociada a cada parroquia.
 
-🔹 Proceso de emparejamiento
+a) Proceso de emparejamiento
 - Se normaliza el nombre de la parroquia en ambos archivos (mayúsculas, sin espacios extra).
 - Por cada feature del GeoJSON, se busca la parroquia correspondiente en el CSV.
 - Se añaden al GeoJSON las propiedades:
@@ -64,7 +69,7 @@ Incluye las categorías de riesgo de inundación y la probabilidad asociada a ca
     - RIESGO (categoría: Alto, Medio, Bajo, Sin datos)
     - PROBABILIDAD (valor numérico de la predicción)
 
-🔹 Resultado
+b) Resultado
 - El mapa muestra cada parroquia con un color según su nivel de riesgo.
 - Al pasar el cursor, se despliega un tooltip con parroquia, cantón y provincia.
 - Al hacer clic, aparece un popup con la predicción de riesgo y la probabilidad.
