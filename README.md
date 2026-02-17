@@ -24,7 +24,7 @@ Instalación de dependencias:
 pip install flask folium
 ```
 
-▶️ Ejecución local
+## Ejecución local
 1. Clona este repositorio:
 git clone https://github.com/tuusuario/nombre-del-repo.git
 cd nombre-del-repo
@@ -41,14 +41,14 @@ python app.py
 http://127.0.0.1:5000
 
 
-🌐 Despliegue en PythonAnywhere
+## Despliegue en PythonAnywhere
 - Sube los archivos del proyecto (app.py, data/, geojson) a tu cuenta de PythonAnywhere.
 - Configura una Web App con Flask.
 - Edita la ruta del archivo principal para que apunte a app.py.
 - Recuerda que en el plan gratuito debes entrar al menos una vez al mes y hacer clic en “Run until 1 month from today” para mantener activa la aplicación.
 
 
-📊 Emparejamiento entre datos geográficos y predicciones
+## Emparejamiento entre datos geográficos y predicciones
 El proyecto combina dos fuentes de información:
 - Datos geográficos (GeoJSON):
 Contiene los polígonos de las parroquias con atributos básicos como nombre de parroquia, cantón y provincia.
@@ -69,7 +69,7 @@ Incluye las categorías de riesgo de inundación y la probabilidad asociada a ca
 - De esta forma, los datos geográficos (ubicación y límites de parroquias) quedan vinculados directamente con las predicciones de riesgo de inundación.
   
 
-🔄 Flujo de datos y emparejamiento
+## Flujo de datos y emparejamiento
 CSV (riesgo_parroquias_final.csv)
     └── Contiene nivel de riesgo y probabilidad por parroquia
           ↓
@@ -92,7 +92,7 @@ Mapa interactivo (Flask + Folium)
         - Leyenda y título con fondo azul
 
 
-📂 Estructura del proyecto
+## Estructura del proyecto
 ├── app.py                          # Aplicación principal Flask
 ├── data/
 │   └── riesgo_parroquias_final.csv # Datos de riesgo por parroquia
@@ -101,7 +101,7 @@ Mapa interactivo (Flask + Folium)
 └── README.md                       # Documentación del proyecto
 
 
-📌 Notas
+## Notas
 - Los datos de riesgo se cargan desde el archivo CSV y se integran al GeoJSON.
 - El mapa ajusta automáticamente el zoom a la zona de estudio.
 - Puedes personalizar colores, título y estilo de la leyenda en app.py.
