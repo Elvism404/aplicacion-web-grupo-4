@@ -59,10 +59,10 @@ Incluye las categorías de riesgo de inundación y la probabilidad asociada a ca
 - Se normaliza el nombre de la parroquia en ambos archivos (mayúsculas, sin espacios extra).
 - Por cada feature del GeoJSON, se busca la parroquia correspondiente en el CSV.
 - Se añaden al GeoJSON las propiedades:
-- CANTON
-- PROVINCIA
-- RIESGO (categoría: Alto, Medio, Bajo, Sin datos)
-- PROBABILIDAD (valor numérico de la predicción)
+    - CANTON
+    - PROVINCIA
+    - RIESGO (categoría: Alto, Medio, Bajo, Sin datos)
+    - PROBABILIDAD (valor numérico de la predicción)
 
 🔹 Resultado
 - El mapa muestra cada parroquia con un color según su nivel de riesgo.
