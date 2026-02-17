@@ -72,6 +72,7 @@ Incluye las categorías de riesgo de inundación y la probabilidad asociada a ca
   
 
 ## Flujo de datos y emparejamiento
+```
 CSV (riesgo_parroquias_final.csv)
     └── Contiene nivel de riesgo y probabilidad por parroquia
           ↓
@@ -92,16 +93,17 @@ Mapa interactivo (Flask + Folium)
         - Popup con riesgo y probabilidad
         - Resaltado azul en borde al pasar el cursor
         - Leyenda y título con fondo azul
-
+```
 
 ## Estructura del proyecto
+```
 ├── app.py                          # Aplicación principal Flask
 ├── data/
 │   └── riesgo_parroquias_final.csv # Datos de riesgo por parroquia
 ├── parroquias_normalizadas.geojson # Datos geográficos de parroquias
 ├── requirements.txt                # Dependencias del proyecto
 └── README.md                       # Documentación del proyecto
-
+```
 
 ## Notas
 - Los datos de riesgo se cargan desde el archivo CSV y se integran al GeoJSON.
